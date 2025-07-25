@@ -28,15 +28,6 @@ const IndicatorCard = styled.div`
   align-items: center;
 `;
 
-const Placeholder = styled.div`
-  background: ${({ theme }) => theme.colors.primary}22;
-  color: ${({ theme }) => theme.colors.dark};
-  border-radius: 8px;
-  padding: 2rem;
-  text-align: center;
-  font-size: 1.2rem;
-`;
-
 const substratoData = [
   { name: 'RSU/Saneamento', value: 60 },
   { name: 'Agropecuária', value: 30 },
@@ -168,7 +159,7 @@ const PanoramaAtual = () => (
     <ResponsiveContainer width="100%" height={260}>
       <PieChart>
         <Pie data={substratoData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} label>
-          {substratoData.map((entry, idx) => (
+          {substratoData.map((_, idx) => (
             <Cell key={`cell-${idx}`} fill={substratoColors[idx % substratoColors.length]} />
           ))}
         </Pie>

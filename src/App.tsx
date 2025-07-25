@@ -1,7 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 import Sidebar from './components/Sidebar';
 import styled from 'styled-components';
 import PanoramaAtual from './components/PanoramaAtual';
@@ -21,8 +17,6 @@ const Content = styled.main`
 `;
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Layout>
       <Sidebar />
@@ -33,7 +27,7 @@ function App() {
         <Oportunidades />
       </Content>
     </Layout>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -5,15 +5,6 @@ const Section = styled.section`
   margin-bottom: 2rem;
 `;
 
-const Placeholder = styled.div`
-  background: ${({ theme }) => theme.colors.primary}22;
-  color: ${({ theme }) => theme.colors.dark};
-  border-radius: 8px;
-  padding: 2rem;
-  text-align: center;
-  font-size: 1.2rem;
-`;
-
 const CardsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
